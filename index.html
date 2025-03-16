@@ -1,0 +1,139 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>个人简历主页</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="js/main.js" defer></script>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+</head>
+
+<button id="back-to-top" title="返回顶部">↑</button>
+
+<body>
+    <nav class="navbar">
+        <div class="nav-brand">欢迎来到我的简历站</div>
+        <div class="nav-links">
+            <a href="index.html">首页</a>
+            <a href="about.html">自我介绍</a>
+            <a href="experience.html">职业经历</a>
+            <a href="skills.html">技能展示</a>
+            <a href="hobbies.html">兴趣爱好</a>
+            <a href="contact.html">联系方式</a>
+        </div>
+    </nav>
+
+    <main class="articles">
+        <!-- 文章1 -->
+        <article class="card">
+            <div class="text">
+                <h2>前端开发实践</h2>
+                <p>React技术栈深度应用案例解析...</p>
+                <a href="#" class="more">阅读全文</a>
+            </div>
+            <img src="images/article1.jpg" alt="技术文章配图">
+        </article>
+
+<!-- 文章2 -->
+<article class="card">
+    <div class="text">
+        <h2>React Hooks深度解析</h2>
+        <p>自定义Hook开发与复杂状态管理方案详解...</p>
+        <a href="#" class="more">阅读全文</a>
+    </div>
+    <img src="images/article2.jpg" alt="React开发场景">
+</article>
+
+<!-- 文章3 -->
+<article class="card">
+    <div class="text">
+        <h2>Node.js后端架构</h2>
+        <p>基于Express+MongoDB构建高可用RESTful API...</p>
+        <a href="#" class="more">阅读全文</a>
+    </div>
+    <img src="images/article3.jpg" alt="后端架构图示">
+</article>
+
+    </main>
+
+<!-- 在首页</main>标签后添加 -->
+<footer class="external-links">
+    <div class="links-container">
+        <!-- 左侧区块 -->
+        <div class="link-column left-section">
+            <h3>特别鸣谢</h3>
+            <a href="https://deepseek.com" target="_blank" rel="noopener">杭州深度求索人工智能基础技术研究有限公司</a>
+        </div>
+
+        <!-- 右侧区块 -->
+        <div class="link-column right-section">
+            <h3>联系方式</h3>
+            <a href="mailto:contact@example.com">apm80jx@163.com</a>
+        </div>
+    </div>
+</footer>
+
+<style>
+/* 新增样式 */
+.external-links {
+    background: rgba(44, 62, 80, 0.9); /* 导航栏颜色变浅 */
+    color: white;
+    padding: 2rem 0;
+    margin-top: 3rem;
+}
+
+.links-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between; /* 横向分布 */
+    align-items: flex-start;
+    padding: 0 2rem;
+}
+
+.link-column {
+    flex: 1;
+    max-width: 30%;
+}
+
+.link-column h3 {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid #3498db;
+    display: inline-block;
+}
+
+.link-column a {
+    color: rgba(255,255,255,0.85);
+    text-decoration: none;
+    font-size: 0.95rem;
+    display: block;
+    margin-top: 0.8rem;
+    transition: all 0.3s ease;
+}
+
+.link-column a:hover {
+    color: #3498db;
+    transform: translateX(8px);
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+    .links-container {
+        flex-direction: column;
+        gap: 2rem;
+        padding: 0 1rem;
+    }
+    
+    .link-column {
+        max-width: 100%;
+        width: 100%;
+    }
+}
+</style>
+
+</body>
+</html>
